@@ -1,0 +1,18 @@
+.nav_liste {
+  display: flex;
+  gap: 50px;
+  color: $color-secondary;
+  font-size: clamp(12px, 2.5vw, 24px);
+
+  @media screen and (min-width: $breakpoint-desktop) {
+        text-transform: none;
+  }
+
+  &_item {
+    &_active {
+      color: $color-secondary;
+      transition: all 0.2s ease-in-out;
+      text-decoration: underline solid $color-primary;
+    }
+}
+}

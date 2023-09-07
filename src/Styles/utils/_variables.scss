@@ -1,0 +1,20 @@
+//les couleurs
+$color-primary : #FF6060;
+$color-secondary : #F6F6F6;
+$color-tertiary : #ffffff;
+$color-footer: #000000;
+
+
+
+
+$breakpoint-desktop: 769px;
+
+$breakpoints: (
+    small: 350px,
+    medium: 768px,
+    large: 992px,
+    xlarge: 1200px,
+);
+
+// $wmin: 375px;
+// $wmax: 786px;
