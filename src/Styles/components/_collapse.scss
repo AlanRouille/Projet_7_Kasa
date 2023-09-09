@@ -16,10 +16,12 @@
         font-size: 24px;
         font-weight: 500;
         .fleche{
-            width: 36px;
+            width: 32px;
+            height: 32px;
             transition: all 0.2s ease-in-out;
-            @media screen and (max-with:1230px){
+            @media screen and (max-width:$breakpoint-desktop){
                 width: 18px;
+                height: 18px;
             }
         }
         .fleche_up{
