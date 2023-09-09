@@ -12,8 +12,8 @@
     padding: 20px;
     max-width: 95%;
     margin: 43px auto;
-    @media screen and (max-width:550px){
-        margin: 20px auto;
+    @media screen and (max-width:$breakpoint-desktop){
+        margin: 20px 20px;
         height: 120px; 
     }
     &_about{
@@ -29,9 +29,9 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../Assets/backgroundabout.jpg');
         background-size: cover;
         background-position: center;
-        @media screen and (max-width:550px){
-            margin: 20px auto;
-            height: 120px; 
+        @media screen and (max-width:$breakpoint-desktop){
+            margin: 20px 20px;
+            height: 223px; 
         }
         
     }

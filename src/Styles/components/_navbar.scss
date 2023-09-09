@@ -1,18 +1,27 @@
-.nav_liste {
+.nav_header {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   gap: 50px;
-  color: $color-secondary;
-  font-size: clamp(12px, 2.5vw, 24px);
+  text-transform: none;
+  @media screen and (max-width: $breakpoint-desktop){
+    text-transform: uppercase;
+    gap: 20px;
 
-  @media screen and (min-width: $breakpoint-desktop) {
-        text-transform: none;
   }
 
-  &_item {
-    &_active {
-      color: $color-secondary;
-      transition: all 0.2s ease-in-out;
-      text-decoration: underline solid $color-primary;
+  &_nav-home,
+  &_nav-propos {
+    text-decoration: none;
+    color:$color-primary;
+    font-weight: 500;
+    text-align: right;
+    font-size: 24px;
+    @media  screen and (max-width: $breakpoint-desktop) {
+      font-size: 12px;
     }
-}
+    &:hover, &:focus {
+      text-decoration: underline ;
+    }
+  }
 }

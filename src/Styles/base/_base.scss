@@ -7,19 +7,27 @@
 }
 
 li {
-    list-style: none;
+    list-style-type: none;
 }
+main {
+    margin: 5%;
+  
+    @media screen and (min-width: $breakpoint-desktop) {
+      margin: 0 100px;
+    }
+  }
 
 body {
-    max-width: 1440px;
-    padding-top: 40px;
-    margin: 0 auto;
-    @media screen and (max-width: 768px) {
-        padding-top: 20px;
-
+    max-width: 100%;
+    min-width: 375px;
+    margin:auto;
+    @media screen and (max-width: $breakpoint-desktop) {
+       max-width: 100%;
     }
 }
 
+
+  
 a{
     text-decoration: none;
 }

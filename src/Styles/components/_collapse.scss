@@ -1,0 +1,68 @@
+.collapse{
+    background-color: $color-secondary;
+   border-radius: 10px;
+    margin: 25px auto;
+    width: 95%;
+    &_title{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        background-color: $color-primary;
+        color: $color-tertiary;
+        border-radius: 5px;
+        font-size: 24px;
+        font-weight: 500;
+        .fleche{
+            width: 36px;
+            transition: all 0.2s ease-in-out;
+            @media screen and (max-with:1230px){
+                width: 18px;
+            }
+        }
+        .fleche_up{
+            transform: rotate(0deg);
+        }
+        .fleche_down{
+            transform: rotate(180deg);
+        }
+    }
+    &_content{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        letter-spacing: 1px;
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        padding: 10px;
+        font-size: clamp(12px, 2vw, 16px);
+        color: $color-primary;
+        transition: visibility 0.5 ease-in-out,
+        opacity 0.5s ease-in-out
+        height 0.2s ease-in-out;
+    }
+    &_content_hidden{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+}
+.accomodation_collapse{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    gap: 70px;
+    &_item{
+        width: 50%;
+    }
+    @media  screen and (max-width:$breakpoint-desktop) {
+        gap: 20px;
+        flex-direction: column;
+        &_item {
+            width: 100%;
+        }
+    }
+}

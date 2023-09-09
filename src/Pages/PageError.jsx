@@ -8,7 +8,7 @@ export default function PageError() {
       <div className="PageError_infos">
         <h1 className="PageError_infos_title">404</h1>
         <p className="PageError_infos_content">
-          La page que vous recherchez n'existe pas.
+          Oups! La page que vous recherchez n'existe pas.
         </p>
       </div>
       <Link className="PageError_infos_return" to="/">
