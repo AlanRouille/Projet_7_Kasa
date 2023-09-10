@@ -15,15 +15,15 @@
         &_infos{
             display: flex;
             flex-direction: column;
-            gap: 5px;
-            font-weight: 500;
             font-size: 18px;
             button {
+                width: auto;
+                height: 25px;
                 display: inline;
                 padding: 5px 15px;
-                margin-top: 10px;
-                margin-right: 10px;
+                margin-top: 20px;
                 cursor: pointer;
+                font-size: 14px;
                 border-radius: 10px;
                 border: none;
                 color:$color-secondary;
@@ -34,13 +34,15 @@
             }div{
                 display: flex;
                 flex-wrap: wrap;
-                gap:10px;
+                gap:15px;
+            }h1{
+                margin-bottom: 10px;
             }
         }
         &_host{
             display: flex;
             flex-direction: column;
-            gap:5px;
+            gap:15px;
             @media screen and (max-width:650px){
                 width: 100%;
                 display: flex;

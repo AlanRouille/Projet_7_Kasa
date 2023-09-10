@@ -1,8 +1,8 @@
 .collapse{
     background-color: $color-secondary;
    border-radius: 10px;
-    margin: 25px auto;
-    width: 95%;
+    margin: 25px 0;
+    width: 100%;
     &_title{
         cursor: pointer;
         display: flex;
@@ -13,7 +13,7 @@
         background-color: $color-primary;
         color: $color-tertiary;
         border-radius: 5px;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
         .fleche{
             width: 32px;
@@ -55,13 +55,11 @@
 .accomodation_collapse{
     display: flex;
     justify-content: space-between;
-    margin: 30px auto;
-    gap: 70px;
+    gap: 30px;
     &_item{
         width: 50%;
     }
     @media  screen and (max-width:$breakpoint-desktop) {
-        gap: 20px;
         flex-direction: column;
         &_item {
             width: 100%;

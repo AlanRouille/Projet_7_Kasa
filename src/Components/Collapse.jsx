@@ -5,11 +5,11 @@ export default function Collapse({ title, content }) {
   const [open, setOpen] = useState(false)
   return (
     <>
-      <div className="collapse">
+      <div className={`collapse ${open ? 'open' : ''}`}>
         <h3 className="collapse_title" onClick={() => setOpen(!open)}>
           {title}
           <img
-            className={open ? 'fleche fleche_up' : 'fleche fleche_down'}
+            className={`fleche ${open ? 'fleche_up' : 'fleche_down'}`}
             src={fleche}
             alt="content show "
           />

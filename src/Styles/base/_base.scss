@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+    font-weight: 500;
 }
 
 li {
@@ -12,9 +13,6 @@ li {
 main {
     margin: 5%;
   
-    @media screen and (min-width: $breakpoint-desktop) {
-      margin: 0 100px;
-    }
   }
 
 body {

@@ -1,15 +1,15 @@
 .carousel {
     position: relative;
     display: flex;
-    width: 90%;
+    // width: 90%;
     height: 415px;
     background-position: center;
     background-size: cover;
     border-radius: 25px;
-    margin: 43px auto;
-    @media  screen and (max-width:650px) {
+    margin: 0 100px;
+    @media  screen and (max-width:$breakpoint-desktop) {
         height: 255px;
-        margin:20px auto;
+        margin:20px 20px;
     }
     &_fleche{
         position: absolute;
@@ -41,6 +41,8 @@
         color: $color-tertiary;
         font-weight: 500;
         font-size: clamp(18px, 2vw, 20px);
-
+        @media screen and(max-width:$breakpoint-desktop) {
+            display: none;
+        }
     }
 }
