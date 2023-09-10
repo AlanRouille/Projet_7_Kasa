@@ -6,10 +6,8 @@
     height: 340px;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     overflow: hidden;
-    @media screen and (max-width: 1230px) {
-        width: 47%;
-    }
-    @media screen and (max-width: 900px) {
+    
+    @media screen and (max-width: $breakpoint-desktop) {
         width: 100%;
     }
     @media screen and (max-width: 500px) {

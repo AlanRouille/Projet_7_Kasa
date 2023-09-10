@@ -11,7 +11,7 @@
     height: 223px;
     padding: 20px;
     max-width: 95%;
-    margin: 43px auto;
+    margin: 0 100px;
     @media screen and (max-width:$breakpoint-desktop){
         margin: 20px 20px;
         height: 120px; 
@@ -24,7 +24,7 @@
         align-items: center;
         border-radius: 25px;
         height: 223px;
-        margin: 43px auto;
+        margin: 0 100px;
         max-width: 95%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../Assets/backgroundabout.jpg');
         background-size: cover;
@@ -36,7 +36,10 @@
         
     }
     p{
-        color: $color-secondary;
-        font-size: clamp(20px, 4vw, 48px);
+        color: $color-tertiary;
+        font-size: 48px;
+        @media screen and (max-width:$breakpoint-desktop) {
+            font-size: 24px;
+        }
     }
 }

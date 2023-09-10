@@ -1,7 +1,7 @@
 .collapse{
     background-color: $color-secondary;
-   border-radius: 10px;
-    margin: 25px 0;
+    border-radius: 10px;
+    margin: 25px 0 0 0;
     width: 100%;
     &_title{
         cursor: pointer;
@@ -13,8 +13,7 @@
         background-color: $color-primary;
         color: $color-tertiary;
         border-radius: 5px;
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 24px;
         .fleche{
             width: 32px;
             height: 32px;
@@ -40,7 +39,7 @@
         visibility: visible;
         height: auto;
         padding: 10px;
-        font-size: clamp(12px, 2vw, 16px);
+        font-size: 24px;
         color: $color-primary;
         transition: visibility 0.5 ease-in-out,
         opacity 0.5s ease-in-out
@@ -56,11 +55,13 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    font-size: 18px;
     &_item{
         width: 50%;
     }
     @media  screen and (max-width:$breakpoint-desktop) {
         flex-direction: column;
+        gap: 0;
         &_item {
             width: 100%;
         }
