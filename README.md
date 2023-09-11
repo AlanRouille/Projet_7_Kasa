@@ -17,7 +17,3 @@ Voici le fichier [JSON](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/
 ### Installation
 
 Ce projet a été lancé avec [Create React App](https://github.com/facebook/create-react-app)
-
-### Informations
-
-le site web :
