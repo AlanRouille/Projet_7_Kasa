@@ -4,9 +4,7 @@
 
 ## Projet 7 - Kasa
 
-```css
 Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans. L'entreprise souhaite faire une refonte totale de son site web.
-```
 
 ### Objectifs
 
