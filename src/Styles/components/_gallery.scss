@@ -10,14 +10,14 @@
     padding: 50px;
     margin: 50px 100px;
     max-width: 95%;
-    @media screen and (max-width: $breakpoint-desktop){  
-        width: 100%;
+    @media screen and (max-width:$breakpoint-desktop){  
         margin: 0 20px;
         gap: 25px; 
         padding:25px 0;
         background-color: transparent;
      }
-    @media screen {
+    @media screen and (max-width: 1300px){
+        gap:20px
         
     }
 }

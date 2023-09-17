@@ -10,8 +10,8 @@
     @media screen and (max-width: $breakpoint-desktop) {
         width: 100%;
     }
-    @media screen and (max-width: 500px) {
-        height: 200px;
+    @media screen and (max-width: $breakpoint-desktop) {
+        height: 255px;
     }
     &::after {
         content: '';
@@ -25,7 +25,6 @@
     }
     &:hover {
         transform:  scale(1);
-        // box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
     &:hover img {
         transform: scale(1.2);
