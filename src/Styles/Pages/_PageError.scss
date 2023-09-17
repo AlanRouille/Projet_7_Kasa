@@ -19,16 +19,17 @@
         }
         &_content{
             font-weight: 500;
-            font-size: clamp(20px, 4vw, 36px);
+            font-size: clamp(18px, 4vw, 36px);
             text-align: center;
         }
         &_return{
+            color: $color-primary;
             display: block;
             text-align: center;
             font-weight: 500;
             font-size: clamp(12px, 2.5vw, 18px);
             &:hover{
-                text-decoration: underline;
+                text-decoration: underline;               
             }
         }
     }
