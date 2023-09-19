@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import Datas from '../Datas/Appart.json'
 import Header from '../Components/Header'
 import Carrousel from '../Components/Carrousel'
@@ -11,6 +11,7 @@ import starRed from '../Assets/starred.png'
 export default function Accomodation() {
   const [pictureSlider, setPictureSlider] = useState([])
   const idAccomodation = useParams('id').id
+  const navigate = useNavigate()
   const dataCurrentAccomodation = Datas.filter(
     (data) => data.id === idAccomodation,
   )
@@ -18,8 +19,13 @@ export default function Accomodation() {
     const dataCurrentAccomodation = Datas.filter(
       (data) => data.id === idAccomodation,
     )
-    setPictureSlider(dataCurrentAccomodation[0].pictures)
-  }, [idAccomodation])
+    if (dataCurrentAccomodation.length === 0) {
+      navigate('*')
+    } else {
+      setPictureSlider(dataCurrentAccomodation[0].pictures)
+    }
+  }, [idAccomodation, navigate])
+
   const name = dataCurrentAccomodation[0].host.name.split(' ')
   const rating = dataCurrentAccomodation[0].rating
   const description = dataCurrentAccomodation[0].description
