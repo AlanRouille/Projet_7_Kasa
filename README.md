@@ -1,4 +1,4 @@
-![Picture](https://github.com/AlanRouille/Projet_7_Kasa/blob/main/src/Assets/LOGO.png)
+![Picture](https://github.com/AlanRouille/Projet_7_Kasa/blob/main/src/Assets/logohome.png)
 
 # Formation OpenClassrooms: Développeur Web
 
