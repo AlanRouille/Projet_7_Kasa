@@ -1,4 +1,4 @@
-import Logo from '../Assets/logo.png'
+import Logo from '../Assets/logohome.png'
 import Navbar from '../Components/Navbar'
 
 export default function Header() {
